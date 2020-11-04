@@ -6,5 +6,5 @@ Database for space missions.
 <center>Main menu</center>
 
 
-<center><img src="./src/main/resources/images/SchemaConcettualeFinale.JPG"></center>
+<center><img src="./ProjectOneWPF/ProjectOneWPF/img/SchemaConcettualeFinale.JPG"></center>
 <center>Entity–relationship model</center>
