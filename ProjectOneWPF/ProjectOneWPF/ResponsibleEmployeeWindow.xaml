@@ -1,0 +1,36 @@
+﻿<Window x:Class="ProjectOneWPF.ResponsibleEmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectOneWPF"
+        mc:Ignorable="d"
+        Title="ResponsibleEmployeeWindow" Height="450" Width="852.8">
+    <Grid>
+        <Label x:Name="SurnameLabel"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,10,0,0" Width="369" Height="61" FontSize="32" HorizontalContentAlignment="Center"/>
+        <Label x:Name="TeamLabel"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="398,10,0,0" Width="311" Height="61" FontSize="32" HorizontalContentAlignment="Center"/>
+        <DataGrid x:Name="MissionDataGrid" HorizontalAlignment="Left" Height="164" VerticalAlignment="Top" Width="242" Margin="303,171,0,0" />
+        <DataGrid x:Name="DataGridSimulation" HorizontalAlignment="Left" Height="164" VerticalAlignment="Top" Width="197" Margin="593,135,0,0"/>
+        <Label Content="Your Missions" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="303,86,0,0" Height="43" Width="150" FontSize="20"/>
+        <Label Content="Your Simulations" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="593,86,0,0" Height="43" Width="165" FontSize="20"/>
+        <Label Content="Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="52,131,0,0" Height="26" Width="35"/>
+        <Label Content="Insert Simulation" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="52,83,0,0" Height="43" Width="167" FontSize="20"/>
+        <Label Content="Lab" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="52,162,0,0" Height="26" Width="29"/>
+        <Label Content="ID Planet" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="52,192,0,0" Height="26" Width="58"/>
+        <Label Content="Description" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="52,223,0,0" Height="26" Width="70"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="124,227,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="124,196,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="124,166,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="124,135,0,0"/>
+        <Button x:Name="ViewSimulationButton" Content="View" HorizontalAlignment="Left" VerticalAlignment="Top" Width="96" Margin="644,312,0,0" Height="37" Click="ViewSimulationButton_Click"/>
+        <Button x:Name="InsertButton" Content="Insert" HorizontalAlignment="Left" VerticalAlignment="Top" Width="96" Margin="148,258,0,0" Height="37" Click="InsertButton_Click"/>
+        <Button x:Name="BackButton" Content="Go back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="97" Margin="398,366,0,0" FontSize="20" Click="BackButton_Click" RenderTransformOrigin="0.489,0.547"/>
+        <ComboBox x:Name="MissionTypeComboBox" HorizontalAlignment="Left" Height="23" Margin="398,135,0,0" VerticalAlignment="Top" Width="147" DropDownClosed="MissionTypeComboBox_DropDownClosed">
+            <ComboBoxItem Content="Reconnaissance"></ComboBoxItem>
+            <ComboBoxItem Content="Discover"></ComboBoxItem>
+            <ComboBoxItem Content="Deliver in orbit"></ComboBoxItem>
+        </ComboBox>
+        <Label Content="Mission Type" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="303,135,0,0" Height="26" Width="90"/>
+
+    </Grid>
+</Window>

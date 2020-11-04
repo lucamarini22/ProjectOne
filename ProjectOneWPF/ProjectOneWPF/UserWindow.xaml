@@ -1,0 +1,23 @@
+﻿<Window x:Class="ProjectOneWPF.UserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectOneWPF"
+        mc:Ignorable="d"
+        Title="UserWindow" Height="141.25" Width="800">
+    <Grid>
+        <ComboBox x:Name="ChoisesComboBox" HorizontalAlignment="Left" Height="56" Margin="10,28,0,0" VerticalAlignment="Top" Width="500" FontSize="24">
+            <ComboBoxItem IsSelected="True" Content="Free Search"></ComboBoxItem>
+            <ComboBoxItem Content="Solar System"></ComboBoxItem>
+            <ComboBoxItem Content="Constellations"></ComboBoxItem>
+            <ComboBoxItem Content="Moons Orbiting Around The Planet"></ComboBoxItem>
+            <ComboBoxItem Content="Visualize Missions"></ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="LetsGoButton" Content="LET'S GO" HorizontalAlignment="Left" Height="56" Margin="515,28,0,0" VerticalAlignment="Top" Width="122" FontSize="24" Click="LetsGoButton_Click"/>
+        <Button x:Name="GoBackButton" Content="GO BACK" HorizontalAlignment="Left" Height="56" Margin="642,28,0,0" VerticalAlignment="Top" Width="142" FontSize="24" Click="GoBackButton_Click"/>
+
+
+    </Grid>
+
+</Window>

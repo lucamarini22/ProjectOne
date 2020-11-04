@@ -1,0 +1,27 @@
+﻿<Window x:Class="ProjectOneWPF.MissionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectOneWPF"
+        mc:Ignorable="d"
+        Title="MissionsWindow" Height="581.897" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="VIEW OUR MISSIONS" HorizontalAlignment="Left" Height="56" Margin="216,10,0,0" VerticalAlignment="Top" Width="371" FontSize="36"/>
+        <Label Content="Filters" HorizontalAlignment="Left" Height="44" Margin="10,82,0,0" VerticalAlignment="Top" Width="81" FontSize="24" FontWeight="Bold"/>
+        <RadioButton GroupName="Complete" x:Name="CompletedRadioButton" Content="Completed" HorizontalAlignment="Left" Height="35" Margin="10,146,0,0" VerticalAlignment="Top" Width="157" FontSize="24" Checked="CompletedRadioButton_Checked" />
+        <RadioButton GroupName="Complete" x:Name="NotCompletedRadioButton" Content="NotCompleted" HorizontalAlignment="Left" Height="35" Margin="172,146,0,0" VerticalAlignment="Top" Width="183" FontSize="24" Checked="NotCompletedRadioButton_Checked"/>
+        <DataGrid x:Name="RecDataGrid" HorizontalAlignment="Left" Height="277" Margin="10,265,0,0" VerticalAlignment="Top" Width="249"/>
+        <Button x:Name="GoBackButton" Content="GO BACK" HorizontalAlignment="Left" Height="62" Margin="514,104,0,0" VerticalAlignment="Top" Width="223" FontSize="24" Click="GoBackButton_Click"/>
+        <DataGrid x:Name="DelDataGrid" HorizontalAlignment="Left" Height="277" Margin="273,265,0,0" VerticalAlignment="Top" Width="249"/>
+        <DataGrid x:Name="DisDataGrid" HorizontalAlignment="Left" Height="277" Margin="535,265,0,0" VerticalAlignment="Top" Width="249"/>
+        <Label HorizontalContentAlignment="Center" Content="Reconnaissance" HorizontalAlignment="Left" Height="44" Margin="10,221,0,0" VerticalAlignment="Top" Width="249" FontSize="24" FontWeight="Bold"/>
+        <Label HorizontalContentAlignment="Center" Content="Deliver in orbit" HorizontalAlignment="Left" Height="44" Margin="273,221,0,0" VerticalAlignment="Top" Width="249" FontSize="24" FontWeight="Bold"/>
+        <Label HorizontalContentAlignment="Center" Content="Discover" HorizontalAlignment="Left" Height="44" Margin="545,221,-0.4,0" VerticalAlignment="Top" Width="249" FontSize="24" FontWeight="Bold"/>
+        <RadioButton GroupName="Complete" x:Name="AllRadioButton" Content="All" HorizontalAlignment="Left" Height="35" Margin="368,146,0,0" VerticalAlignment="Top" Width="57" FontSize="24" Checked="AllRadioButton_Checked"/>
+
+    </Grid>
+</Window>

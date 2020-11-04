@@ -1,0 +1,18 @@
+﻿<Window x:Class="ProjectOneWPF.AstronautWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectOneWPF"
+        mc:Ignorable="d"
+        Title="AstronautWindow" Height="544.688" Width="800">
+    <Grid>
+        <Label x:Name="AstronautLabel"  HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="69" Margin="10,10,0,0" VerticalAlignment="Top" Width="774" FontSize="24"/>
+        <Label Content="Here you can see your missions" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="42" Margin="10,84,0,0" VerticalAlignment="Top" Width="774" FontSize="24"/>
+        <Label Content="Missions completed" HorizontalAlignment="Left" Height="42" Margin="10,131,0,0" VerticalAlignment="Top" Width="229" FontSize="24"/>
+        <Label Content="Missions yet to complete" HorizontalAlignment="Left" Height="42" Margin="496,131,0,0" VerticalAlignment="Top" Width="288" FontSize="24"/>
+        <DataGrid x:Name="DataGridCompleted" HorizontalAlignment="Left" Height="232" Margin="10,178,0,0" VerticalAlignment="Top" Width="324"/>
+        <DataGrid x:Name="DataGridNotCompleted" HorizontalAlignment="Left" Height="232" Margin="453,178,0,0" VerticalAlignment="Top" Width="331"/>
+        <Button x:Name="BackButton" Content="GO BACK" HorizontalAlignment="Left" Height="70" Margin="286,435,0,0" VerticalAlignment="Top" Width="208" FontSize="22" Click="BackButton_Click"/>
+    </Grid>
+</Window>
